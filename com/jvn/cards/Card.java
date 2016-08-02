@@ -11,7 +11,7 @@ public class Card {
 		this.setSuit(suit);
 	}
 
-	public void setValue(CardValye value) {
+	public void setValue(CardValue value) {
 		this.value = value;
 	}
 
