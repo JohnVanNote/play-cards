@@ -1,1 +1,5 @@
+# Swap files
 *.swp
+
+# Card files
+*.card
