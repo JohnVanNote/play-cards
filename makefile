@@ -35,10 +35,13 @@ run : compile
 	echo "Nothing"
 
 compile : 
-	echo "Compiling sources..."
+	echo "Compiling sources..."; \
 	for src in $(srcfiles); do \
 	$(jv) $(args) $$src; \
 	done
+
+writecards:
+	python make-cards.py
 
 clean : 
 	rm -rf $(bind)/*
