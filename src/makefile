@@ -15,12 +15,12 @@ srcd=../src
 bind=../bin
 
 # package info
-default=$(srcd)/com/jvn
+default=com/jvn
 cardp=$(default)/cards
 gamep=$(default)/games
 
 # Java
-args=--classpath $(bind)
+args=-cp $(bind)
 
 srcfiles = \
 	$(cardp)/CardValue.java \
@@ -37,11 +37,11 @@ run : compile
 compile : 
 	echo "Compiling sources..."; \
 	for src in $(srcfiles); do \
-	$(jv) $(args) $$src; \
+	$(jvc) $(args) $$src; \
 	done
 
 writecards:
-	python make-cards.py
+	python ../make-cards.py
 
 clean : 
 	rm -rf $(bind)/*

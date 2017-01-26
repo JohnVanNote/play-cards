@@ -1,4 +1,11 @@
-// CardValue.java
+/**
+ * CardValue.java
+ *
+ * John Van Note
+ * 2016-07-05
+ *
+ * This is an Enumerates card values
+ */
 
 package com.jvn.cards;
 
@@ -18,7 +25,7 @@ public enum CardValue {
 	TEN,
 	JACK,
 	QUEEN,
-  KING;
+    KING;
 
   public List<CardValue> getValues() {
     List<CardValue> values = new ArrayList<CardValue>();
