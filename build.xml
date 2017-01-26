@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+    <description>
+        Compiles all files in current directory
+        Added a "clean" target - uses a fileset to remove all *.class files
+    </description>
+    <target name="compile-deck">
+        <javac srcdir=’./com/jvn/deck/’/>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="./">
+                <include name=’*.class’/>
+            </fileset>
+        </delete>
+    </target>
+</project>
