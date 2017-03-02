@@ -10,5 +10,6 @@
 package com.jvn.deck;
 
 public abstract class AbstractCard {
+    private data;
     public AbstractCard(){}
 }

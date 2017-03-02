@@ -1,7 +1,9 @@
 # Play-Cards
+
 Command line tool to play cards written in Java (mostly)
 
-### Requirements
+## Requirements
+
 * Java
 * Ant
 * Make
